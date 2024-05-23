@@ -25,11 +25,11 @@ Bu projeyi çalıştırabilmek için:
 
 ## Kullanımı
 
-1-) Mail adressimiz ve parola ile girş yapıyoruz.
+1-) Mail adresimiz ve parola ile giriş yapıyoruz.
 
 ![image](https://github.com/buraktanis/tksharedpay/assets/153070257/bcf409db-6d67-4c86-b748-cdadb7aae47e)
 
-2-) İlk olarak kişisel bakikiyemiz ve diğer seçenekler karşımıza çıkıyor.( Demo sürümünde sadece "Ortak Hesapları Yönet" butonu çalışmaktadır. )
+2-) İlk olarak kişisel bakiyemiz ve diğer seçenekler karşımıza çıkıyor.( Demo sürümünde sadece "Ortak Hesapları Yönet" butonu çalışmaktadır. )
 
 ![image](https://github.com/buraktanis/tksharedpay/assets/153070257/a224ad7d-d5cd-4fa0-8b73-fbde4b3b60c8)
 
