@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/homefragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".HomeFragment">
+
+    <!-- TK PAY Title -->
+    <TextView
+        android:id="@+id/tkPayTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:text="TK PAY"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:textColor="#000000"/>
+
+    <!-- Balance Card -->
+    <RelativeLayout
+        android:id="@+id/balanceCard"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/tkPayTitle"
+        android:layout_margin="16dp"
+        android:background="@drawable/navy_border"
+        android:padding="16dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:elevation="4dp">
+
+        <TextView
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/totalBalanceText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Toplam Bakiye"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/balanceAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/totalBalanceText"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_centerHorizontal="true"
+            />
+
+        <TextView
+            android:id="@+id/accountNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:text="TK606752345"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="8dp"/>
+        <ImageView
+            android:id="@+id/tkPayLogo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/logotkpay"/>
+    </RelativeLayout>
+
+    <!-- Buttons -->
+    <LinearLayout
+        android:id="@+id/buttonsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/balanceCard"
+        android:orientation="vertical"
+        android:layout_marginTop="16dp"
+        android:padding="16dp"
+        >
+
+        <Button
+
+
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hesap hareketleri"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/gray_borders"
+            android:textColor="#000000"
+            android:backgroundTint="#D3D3D3"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kredi / Banka kartı ekle"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/gray_borders"
+            android:textColor="#000000"
+            android:backgroundTint="#D3D3D3"/>
+
+        <Button
+            android:id="@+id/btnNavigateToSharedWallet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ortak Hesapları Yönet"
+            android:layout_marginBottom="8dp"
+            android:textColor="#000000"
+            android:background="@drawable/gray_borders"
+            android:backgroundTint="#D3D3D3"/>
+
+        <Button
+            android:background="@drawable/gray_borders"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Para Yükle"
+            android:textColor="#000000"
+            android:backgroundTint="#D3D3D3"/>
+    </LinearLayout>
+</RelativeLayout>

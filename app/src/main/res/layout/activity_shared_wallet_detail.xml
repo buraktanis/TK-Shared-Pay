@@ -1,0 +1,111 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <!-- TK PAY Title -->
+    <TextView
+        android:id="@+id/tkPayTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="TK PAY"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#000000"/>
+
+    <!-- Main Content ScrollView -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tkPayTitle"
+        android:layout_marginTop="20dp"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Account Information -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:id="@+id/accountName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Aile Seyahati"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"/>
+
+                <TextView
+                    android:id="@+id/accountBalance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mevcut Bakiye: 5000,00 TRY"
+                    android:textSize="16sp"
+                    android:textColor="#000000"/>
+
+                <TextView
+                    android:id="@+id/accountMembers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Üyeler: Ali, Ayşe, Mehmet"
+                    android:textSize="16sp"
+                    android:textColor="#000000"/>
+
+                <TextView
+                    android:id="@+id/accountNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TK606752345"
+                    android:textSize="16sp"
+                    android:textColor="#000000"/>
+            </LinearLayout>
+
+            <!-- Send Money Section -->
+            <EditText
+                android:id="@+id/sendMoneyAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Gönderilecek Tutar"
+                android:background="@android:drawable/editbox_background"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp"/>
+
+            <Button
+                android:id="@+id/sendMoneyButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Para Gönder"
+                android:background="@drawable/red_border"
+                android:textColor="#FFFFFF"
+                android:layout_marginBottom="20dp"/>
+
+            <!-- Account Settings -->
+            <Button
+                android:id="@+id/manageAccountButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hesabı Yönet"
+                android:background="@drawable/red_border"
+                android:textColor="#FFFFFF"
+                android:layout_marginBottom="10dp"/>
+
+            <Button
+                android:id="@+id/backHomePage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ana Sayfaya Dön"
+                android:background="@drawable/red_border"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

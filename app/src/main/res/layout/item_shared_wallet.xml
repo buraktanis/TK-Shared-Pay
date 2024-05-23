@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:background="@drawable/gray_borders"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/walletImageView"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/family" />
+
+    <TextView
+        android:id="@+id/tripNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/walletImageView"
+        android:layout_marginStart="8dp"
+        android:text="Trip Name"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/balanceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tripNameTextView"
+        android:layout_toEndOf="@id/walletImageView"
+        android:layout_marginStart="8dp"
+        android:text="Mevcut Bakiye: 5000,00 TRY"
+        android:textSize="14sp"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/membersTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/balanceTextView"
+        android:layout_toEndOf="@id/walletImageView"
+        android:layout_marginStart="8dp"
+        android:text="Üyeler: Ali, Ayşe, Mehmet"
+        android:textSize="14sp"
+        android:textColor="#000000" />
+</RelativeLayout>

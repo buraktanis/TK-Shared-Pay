@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".AddSharedWallet">
+
+    <!-- TK PAY Title -->
+    <TextView
+        android:id="@+id/tkPayTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="TK PAY"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#000000"/>
+
+    <!-- Joint Account Form -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tkPayTitle"
+        android:layout_margin="16dp">
+
+        <LinearLayout
+            android:id="@+id/memberListLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <EditText
+                android:id="@+id/accountName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Hesabı adı giriniz..."
+                android:background="@android:drawable/editbox_background"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Üye Bilgileri"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_marginBottom="10dp"/>
+
+            <EditText
+                android:id="@+id/memberTKNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="TK numarası..."
+                android:background="@android:drawable/editbox_background"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp"/>
+
+            <Button
+                android:id="@+id/addMemberButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kişi Ekle"
+                android:background="@drawable/red_border"
+                android:textColor="#FFFFFF"
+                android:layout_marginBottom="10dp"/>
+
+            <Button
+                android:id="@+id/inviteFriendButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ortak Hesap Aç"
+                android:background="@drawable/gray_borders"
+                android:textColor="#000000"
+                android:layout_marginBottom="100dp"/>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
